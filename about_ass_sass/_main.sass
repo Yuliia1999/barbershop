@@ -1,0 +1,114 @@
+$font-family-basic: 'Open Sans'
+$font-family-montserrat: 'Montserrat'
+$font-family-roboto: 'Roboto Condensed'
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+main
+  min-height: 650px
+  .container
+    padding: 60px 160px 0 160px 
+    h1
+      font-size: 55px
+      font-family: $font-family-montserrat
+      font-weight: 900
+      text-align: center
+    .aboutus_wrapper
+      display: grid
+      grid-template-columns: 350px 350px 350px 
+      grid-template-rows: minmax(250px, auto)
+      grid-auto-rows: 250px
+      justify-content: center
+      column-gap: 40px
+      margin-top: 60px
+      .aboutus_box
+        padding: 30px 20px
+      .aboutus_describ
+        font-size: 16px
+        font-family: $font-family-basic
+        line-height: 23px
+    .aboutus_btn
+      display: block
+      width: 240px
+      height: 62px
+      background-color: black
+      color: white
+      font-size: 22px
+      margin: 0 auto
+      cursor: pointer 
+      border: none
+      transition: all .3s
+      &:hover
+        opacity: 80%
+
+.booking
+  min-height: 580px
+  .container
+    padding: 60px 160px 0 160px
+    .booking_wrapper
+      display: grid
+      grid-template-columns: 600px 650px
+      grid-template-rows: 500px
+      justify-content: center
+      img
+        width: 80%
+        border-radius: 100%
+        object-fit: cover
+      .booking_box 
+        padding: 50px 25px
+        .booking_title
+          font-size: 55px
+          font-family: $font-family-montserrat
+          font-weight: 850
+        .booking_descr
+          font-size: 18px
+          font-family: $font-family-basic
+          margin-top: 25px
+          line-height: 25px
+    .booking_btn
+      display: block
+      margin-top: 60px
+      width: 304px
+      height: 62px
+      background-color: black
+      color: white
+      font-size: 22px
+      font-weight: 700
+      border: none
+      cursor: pointer
+      transition: all .3s
+      &:hover
+        opacity: 80%
+
+
+.awards 
+  min-height: 550px
+  background: linear-gradient(to bottom,  #292D33, #9D9570)
+  .container
+    padding: 60px 160px 0 160px
+    .awards_title
+      font-size: 48px
+      font-family: $font-family-montserrat
+      font-weight: 800
+      text-align: center
+      color: white
+    .awards_wrapper 
+      display: grid
+      grid-template-columns: 350px 350px 350px
+      grid-auto-rows: 300px auto
+      justify-content: center
+      column-gap: 35px
+      margin-top: 50px
+      img
+        width: 100%
+        object-fit: cover
+
+
+
+
+
+
+

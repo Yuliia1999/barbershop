@@ -1,0 +1,282 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 80px;
+}
+header .container {
+  padding: 0 160px 0 160px;
+}
+header .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 30px;
+  margin-left: 300px;
+  padding: 25px 0 25px 0;
+}
+header .container nav a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto Condensed";
+  color: black;
+}
+header .container nav a:hover {
+  opacity: 80%;
+}
+
+main {
+  min-height: 850px;
+}
+main .container {
+  padding: 40px 0 0 0;
+}
+main .container .main_wrapper {
+  display: grid;
+  grid-template-columns: 700px 850px;
+  grid-template-rows: 650px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+main .container .main_wrapper .main_one {
+  padding: 35px 15px;
+}
+main .container .main_wrapper h2 {
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+main .container .main_wrapper h1 {
+  font-size: 48px;
+  font-family: "Montserrat";
+  font-weight: 750;
+  margin-top: 20px;
+}
+main .container .main_wrapper .main_title {
+  font-size: 20;
+  font-family: "Open Sans";
+  margin-top: 34px;
+  font-weight: 600;
+}
+main .container .main_wrapper .main_btn {
+  width: 304px;
+  height: 62px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 34px;
+}
+main .container .main_wrapper .main_btn:hover {
+  background-color: #a0c6b9;
+}
+main .container .main_wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team {
+  min-height: 750px;
+  background-color: #9D9570;
+}
+.team .container {
+  padding: 60px 160px 0 160px;
+}
+.team .container .team_title {
+  font-size: 60px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.team .container .team_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-auto-rows: 480px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.team .container .team_wrapper .team_content {
+  position: relative;
+}
+.team .container .team_wrapper .team_wrap_ {
+  padding: 0 20px;
+  position: absolute;
+  top: 180px;
+}
+.team .container .team_wrapper .team_name {
+  bottom: 220px;
+  left: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.team .container .team_wrapper .team_position {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 650;
+  color: #9d9570;
+  margin-top: 12px;
+}
+.team .container .team_wrapper .team_describ {
+  color: white;
+  font-family: "Open Sans";
+  margin-top: 22px;
+  font-weight: 600;
+}
+.team .container .team_wrapper .team_social_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.team .container .team_wrapper svg {
+  fill: #9d9570;
+  width: 35px;
+}
+.team .container .team_wrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.choice {
+  min-height: 850px;
+  background-image: url(../img/_team_/choice_bg.jpg);
+  background-position: center/center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.choice .container {
+  padding: 200px 160px 0 160px;
+}
+.choice .container .choice_title {
+  font-size: 60px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: white;
+  width: 1000px;
+  margin-left: 250px;
+  text-align: center;
+}
+.choice .container .choice_subtitle {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans";
+  text-align: center;
+  margin-top: 30px;
+}
+.choice .container .choice_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.choice .container .choice_wrap .choice_btn {
+  width: 259px;
+  height: 62px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.choice .container .choice_wrap .choice_btn_book {
+  width: 300px;
+  height: 65px;
+  background-color: unset;
+  border: 1px solid white;
+  color: black;
+  font-size: 22px;
+  font-weight: 650;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.choice .container .choice_wrap .choice_btn_book:hover {
+  color: white;
+}
+
+.contact {
+  min-height: 550px;
+}
+.contact .container {
+  padding: 0 160px 0 160px;
+}
+.contact .container .contact_wrapper {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: stretch;
+}
+.contact .container .contact_wrapper .contact_box {
+  background-color: #292d33;
+  padding: 30px 60px;
+}
+.contact .container .contact_wrapper .contact_title {
+  font-size: 55px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: white;
+}
+.contact .container .contact_wrapper form {
+  margin-top: 41px;
+}
+.contact .container .contact_wrapper form .contact_form {
+  margin-top: 22px;
+}
+.contact .container .contact_wrapper form #name {
+  width: 100%;
+  height: 41px;
+  padding: 10px;
+}
+.contact .container .contact_wrapper form #email {
+  width: 100%;
+  height: 41px;
+  padding: 10px;
+}
+.contact .container .contact_wrapper form textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 20px;
+}
+.contact .container .contact_wrapper .contact_btn {
+  width: 100%;
+  height: 49px;
+  background-color: #9d9570;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+}/*# sourceMappingURL=team.css.map */

@@ -1,0 +1,568 @@
+$font-family-basic: 'Open Sans'
+$font-family-montserrat: 'Montserrat'
+$font-family-roboto: 'Roboto Condensed'
+
+
+@mixin button
+  width: 104px
+  height: 44px
+  font-size: 15px
+  color: white
+  background-color: black
+  border: none
+  border-radius: 10px
+  margin-top: 20px
+  cursor: pointer
+  transition: all 0.2s 
+  &:hover
+    opacity: 70%
+
+@mixin main_button
+  width: 217px
+  height: 66px
+  color: black
+  background-color: white
+  border: 2px solid black
+  border-radius: 15px
+  font-size: 19px
+  letter-spacing: 1px
+  cursor: pointer
+  transition: all 0.2s 
+  margin-left: 10px
+  &:hover
+    color: white
+    background-color: black
+  
+@mixin main_black_button
+  width: 213px
+  height: 62px
+  background-color: black
+  color: white
+  border: none
+  font-size: 18
+  font-weight: 700
+  &:hover
+    background-color: #a0c6b9
+  
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+header
+  height: 80px
+  .container
+    padding: 0 160px 0 160px
+    nav
+      display: flex
+      justify-content: flex-end
+      gap: 30px
+      margin-left: 300px
+      padding: 25px 0 25px 0
+      a
+        text-decoration: none
+        font-size: 20px
+        font-family: $font-family-roboto
+        color: black
+        &:hover
+          opacity: 80%
+
+main
+  min-height: 1150px
+  .container
+    padding: 0 160px 0 160px
+    .main_wrapper
+      display: grid
+      grid-template-columns: 500px 700px
+      justify-content: center
+      justify-items: end
+      margin-top: 60px
+      .main_one
+        padding: 0 25px 0 25px
+        .main_wrap_social
+          margin-top: 25px
+        h2
+          font-size: 22px
+          font-family: $font-family-basic
+          font-weight: 650
+          letter-spacing: 3px
+          margin-left: 11px
+        h1
+          font-size: 55px
+          font-weight: 800
+          font-family: $font-family-montserrat
+          margin-top: 25px
+          margin-left: 10px
+        .main_wrap_items
+          display: flex
+          flex-direction: row
+          align-items: center
+          gap: 5px
+          img
+            width: 40px
+            height: 40px
+          .call_us
+            width: 25px
+            height: 25px
+            margin-left: 8px
+        a
+          font-size: 18px
+          text-transform: uppercase
+          color: black
+          font-family: $font-family-montserrat
+          text-decoration: none
+          font-weight: 600
+        .btn_title
+          margin-top: 30px
+          margin-left: 10px
+          font-size: 20px
+          font-weight: 700
+        .main_btn
+          @include main_button
+          margin-top: 50px
+
+.menu
+  min-height: 280px
+  .container
+    padding: 0 160px 0 160px
+    .menu_wrapper
+      display: grid
+      grid-template-columns: repeat(4, minmax(325px, auto))
+      grid-template-rows: 275px
+      grid-auto-rows: 275px
+      justify-content: center
+      justify-items: center
+      align-items: center
+      margin-top: 35px
+      .menu_box
+        img
+          width: 100px
+          height: 100px
+        .menu_title
+          font-family: $font-family-roboto
+          font-weight: 450
+          font-size: 24px
+          margin-top: 20px
+        button
+           @include button
+
+
+.info
+  min-height: 1005px
+  background-image: url(../img/bg_price.png) 
+  background-position: center
+  background-size: cover 
+  background-repeat: no-repeat 
+  .container
+    padding: 300px 160px 0 160px
+    .info_wrapper
+      display: grid
+      grid-template-columns: 570px 550px
+      grid-template-rows: minmax(550px, auto)
+      justify-content: center
+      gap: 65px
+      .info_one
+        display: grid
+        align-items: center
+        justify-items: center
+        background-color: white
+        border-radius: 50px
+        padding: 30px
+        li
+          list-style-type: none
+        .info_title
+          color: #9d9570
+          font-family: $font-family-montserrat
+          font-size: 30px
+          font-weight: 450
+        li
+          font-size: 20px
+          font-family: $font-family-basic
+        button
+          @include main_button
+          font-size: 17px
+      .info_two
+        display: grid
+        align-items: start
+        padding: 30px
+        .info_title
+          font-size: 48px
+          font-family: $font-family-montserrat
+          font-weight: 700
+          color: white
+        .info_subtitle
+          font-size: 20px
+          font-family: $font-family-basic
+          color: white
+        li
+          font-size: 18px
+          color: white
+          list-style-type: none
+          &::before
+            content: '✔'
+            margin-right: 8px
+
+.price
+  min-height: 840px
+  .container
+    padding: 60px 160px 0 160px
+    .price_title_
+      font-size: 55px
+      font-family: $font-family-montserrat
+      font-weight: 800
+      text-align: center
+    .price_wrapper
+      display: grid
+      grid-template-columns: 550px 550px
+      justify-content: center
+      margin-top: 80px
+      gap: 100px
+      .price_one
+        display: grid
+        grid-template-rows: repeat(4, 160px)
+        grid-auto-rows: 160px
+      .price_wrap_item
+        display: flex
+        justify-content: space-between
+        position: relative
+        &::before
+          content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .'
+          position: absolute
+          top: 45px
+      .price_two
+        display: grid
+        grid-template-rows: repeat(4, 160px)
+        grid-auto-rows: 160px
+      .price_title
+        font-size: 24px
+        font-weight: 650
+        font-family: $font-family-montserrat
+      .price_price
+        font-size: 24px
+        color: #9d9570  
+    
+.booking
+  min-height: 1100px
+  background-color: #1a1a1a
+  .container
+    padding: 150px 160px 0 160px
+    .bookin_items
+      position: relative
+    .booking_round
+      position: absolute
+      width: 835px
+      height: 835px
+      background-color: #78958B
+      border-radius: 50%
+      z-index: 1
+    .booking_round_2
+      position: absolute
+      top: 0
+      z-index: 2
+      width: 717px
+      height: 717px
+      background-color: #9D9570
+      border-radius: 50% 10%
+    img
+      position: absolute
+      left: 110px
+      z-index: 3
+      border-radius: 100% 100%
+      border: 1px solid #090908c4
+    .booking_wrap
+      position: absolute
+      right: 270px
+      top: 350px
+      z-index: 4
+      width: 640px
+      min-height: 470px
+      background-color: white
+      border-radius: 10px
+      padding: 40px
+      .booking_title
+        font-size: 48px
+        font-family: $font-family-montserrat
+        font-weight: 700
+      .booking_subtitle
+        font-size: 18px
+        font-family: $font-family-basic
+        margin-top: 19px
+      .booking_btn
+        @include main_black_button
+        margin-top: 80px
+  
+.booking_two
+  min-height: 1100px
+  .container
+    padding: 180px 160px 0 160px
+    .booking_items
+      position: relative
+      .booking_round
+        position: absolute
+        right: 250px
+        z-index: 2
+        width: 835px
+        height: 735px
+        background-color: #78958B
+        border-radius: 50%
+      .booking_round_2
+        position: absolute
+        right: 250px
+        z-index: 1
+        width: 717px
+        height: 717px
+        background-color: #9D9570
+        border-radius: 50% 10%
+      img
+        position: absolute
+        top: 50px
+        right: 200px
+        z-index: 3
+        border-radius: 30% 50%
+        width: 900px
+      .booking_wrap
+        position: absolute
+        top: 330px
+        left: 300px
+        z-index: 4
+        width: 532px
+        min-height: 452px
+        background-color: white
+        border-radius: 10px
+        padding: 40px
+        .booking_title
+          font-size: 48px
+          font-weight: 800
+          color: #9d9570
+        .booking_btn
+          @include main_button
+          margin-top: 65px
+          
+          
+.service
+  min-height: 860px
+  background-color: #292D33
+  .container
+    padding: 0 160px 0 160px
+    .service_title
+      font-size: 48px
+      font-family: $font-family-montserrat
+      font-weight: 700
+      color: white
+      padding-top: 60px
+      text-align: center
+    .service_subtitle
+      font-size: 16px
+      font-family: $font-family-basic
+      color: white
+      text-align: center
+      margin-top: 20px
+    .service_wrapper
+      display: grid
+      grid-template-columns: 550px 550px
+      justify-content: center
+      align-items: center
+      margin-top: 55px
+      img
+        border-radius: 10px
+        transition: all 0.3s
+        &:hover
+          transform: scale(1.1)
+      .service_wrap_flex
+        display: flex
+        gap: 25px
+        flex-wrap: wrap
+        .service_items
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          width: 260px
+          min-height: 260px
+          background-color: white
+          border-radius: 10px
+          img
+            width: 100px
+            height: 100px
+            border-radius: 10px
+          .service_title_
+            font-size: 24px
+            font-family: $font-family-montserrat
+            font-weight: 650
+            text-align: center
+            margin-top: 30px
+
+      
+.rewies 
+  min-height: 850px
+  background-color: #292D33 
+  .container 
+    padding: 65px 160px 0 160px 
+    .rewies_title 
+      font-size: 55px 
+      font-family: $font-family-montserrat 
+      font-weight: 700 
+      text-align: center 
+      color: white 
+    .rewies_subtitle 
+      font-size: 16px 
+      font-family: $font-family-basic 
+      color: white 
+      margin-top: 35px 
+      width: 650px 
+      margin: 0 auto 
+      margin-top: 25px 
+    .rewies_wrapper 
+      display: grid 
+      grid-template-columns: 345px 345px 345px 
+      grid-template-rows: minmax(385px, auto) 
+      grid-auto-rows: 345px auto
+      gap: 35px 
+      justify-content: center 
+      margin-top: 60px 
+      .rewies_box 
+        position: relative
+        background-color: white 
+        border-radius: 20px 
+        padding: 25px 20px 35px 25px 
+      .rewies_title_box 
+        position: absolute 
+        top: 50px 
+        left: 50px 
+        z-index: 2 
+        font-size: 20px 
+        font-family: $font-family-montserrat 
+        font-weight: 650 
+      .rewies_subtitle_box 
+        font-size: 16px 
+        font-family: $font-family-basic 
+        margin-top: 100px
+      img 
+        position: absolute 
+        right: 20px 
+        top: 25px 
+        width: 85px 
+        height: 85px 
+        border-radius: 100% 
+        border: 4px solid #A0C6B9 
+      svg 
+        position: absolute 
+        left: 0 
+        z-index: 1 
+        top: 15px 
+        width: 80px 
+        height: 80px 
+        fill: #A0C6B9 
+
+.contact
+  min-height: 550px
+  .container
+    padding: 0 160px 0 160px
+    .contact_wrapper
+      display: grid
+      grid-template-columns: 600px 600px
+      justify-content: center
+      justify-items: stretch
+      .contact_box 
+        background-color: #292d33
+        padding: 30px 60px
+      .contact_title
+        font-size: 55px
+        font-family: $font-family-montserrat
+        font-weight: 700
+        color: white
+      form
+        margin-top: 41px
+        .contact_form
+          margin-top: 22px
+        #name
+          width: 100%
+          height: 41px
+          padding: 10px
+        #email
+          width: 100%
+          height: 41px
+          padding: 10px
+        textarea
+          resize: none
+          width: 100%
+          height: 150px
+          padding: 10px
+          font-size: 20px
+      .contact_btn
+        width: 100%
+        height: 49px
+        background-color: #9d9570
+        color: white
+        text-align: center
+        cursor: pointer
+        margin-top: 20px
+        border: none
+        font-size: 20px
+    
+footer
+  height: 120px
+  background-color: #333333
+  .container
+    padding: 0 160px 0 160px 
+    .footer_title
+      text-align: center
+      padding: 45px 0
+      color: white
+      font-size: 20px
+      
+
+
+        
+
+
+      
+ 
+
+
+
+
+
+    
+
+        
+
+
+ 
+
+
+
+
+
+            
+          
+
+          
+        
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+        
+
+
+

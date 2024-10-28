@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  min-height: 650px;
+}
+main .container {
+  padding: 60px 160px 0 160px;
+}
+main .container h1 {
+  font-size: 55px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+}
+main .container .aboutus_wrapper {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: minmax(250px, auto);
+  grid-auto-rows: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  margin-top: 60px;
+}
+main .container .aboutus_wrapper .aboutus_box {
+  padding: 30px 20px;
+}
+main .container .aboutus_wrapper .aboutus_describ {
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 23px;
+}
+main .container .aboutus_btn {
+  display: block;
+  width: 240px;
+  height: 62px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+main .container .aboutus_btn:hover {
+  opacity: 80%;
+}
+
+.booking {
+  min-height: 580px;
+}
+.booking .container {
+  padding: 60px 160px 0 160px;
+}
+.booking .container .booking_wrapper {
+  display: grid;
+  grid-template-columns: 600px 650px;
+  grid-template-rows: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.booking .container .booking_wrapper img {
+  width: 80%;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.booking .container .booking_wrapper .booking_box {
+  padding: 50px 25px;
+}
+.booking .container .booking_wrapper .booking_box .booking_title {
+  font-size: 55px;
+  font-family: "Montserrat";
+  font-weight: 850;
+}
+.booking .container .booking_wrapper .booking_box .booking_descr {
+  font-size: 18px;
+  font-family: "Open Sans";
+  margin-top: 25px;
+  line-height: 25px;
+}
+.booking .container .booking_btn {
+  display: block;
+  margin-top: 60px;
+  width: 304px;
+  height: 62px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.booking .container .booking_btn:hover {
+  opacity: 80%;
+}
+
+.awards {
+  min-height: 550px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#292D33), to(#9D9570));
+  background: linear-gradient(to bottom, #292D33, #9D9570);
+}
+.awards .container {
+  padding: 60px 160px 0 160px;
+}
+.awards .container .awards_title {
+  font-size: 48px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+.awards .container .awards_wrapper {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-auto-rows: 300px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  margin-top: 50px;
+}
+.awards .container .awards_wrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=aboutus.css.map */

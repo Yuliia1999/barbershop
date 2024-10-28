@@ -1,0 +1,224 @@
+$font-family-basic: 'Open Sans'
+$font-family-montserrat: 'Montserrat'
+$font-family-roboto: 'Roboto Condensed'
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+
+header
+  height: 80px
+  .container
+    padding: 0 160px 0 160px
+    nav
+      display: flex
+      justify-content: flex-end
+      gap: 30px
+      margin-left: 300px
+      padding: 25px 0 25px 0
+      a
+        text-decoration: none
+        font-size: 20px
+        font-family: $font-family-roboto
+        color: black
+        &:hover
+          opacity: 80%
+  
+main
+  min-height: 850px
+  .container
+    padding: 40px 0 0 0
+    .main_wrapper
+      display: grid
+      grid-template-columns: 700px 850px
+      grid-template-rows: 650px
+      align-items: center
+      justify-content: end
+      .main_one
+        padding: 35px 15px
+      h2
+        font-size: 18px
+        font-family: $font-family-montserrat
+      h1
+        font-size: 48px
+        font-family: $font-family-montserrat
+        font-weight: 750
+        margin-top: 20px
+      .main_title
+        font-size: 20
+        font-family: $font-family-basic
+        margin-top: 34px
+        font-weight: 600
+      .main_btn
+        width: 304px
+        height: 62px
+        background-color: black
+        color: white
+        border: none
+        font-size: 22px
+        cursor: pointer
+        margin-top: 34px
+        &:hover
+          background-color: #a0c6b9
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.team
+  min-height: 750px
+  background-color: #9D9570
+  .container
+    padding: 60px 160px 0 160px
+    .team_title
+      font-size: 60px
+      font-family: $font-family-montserrat
+      text-align: center
+      color: white
+      font-weight: 600
+    .team_wrapper
+      display: grid
+      grid-template-columns: repeat(3, 380px)
+      grid-auto-rows: 480px
+      justify-content: center
+      gap: 40px
+      margin-top: 40px
+      .team_content
+        position: relative
+      .team_wrap_
+        padding: 0 20px
+        position: absolute
+        top: 180px
+      .team_name
+        bottom: 220px
+        left: 45px
+        font-size: 20px
+        font-weight: 700
+        color: white
+      .team_position
+        font-size: 16px
+        font-family: $font-family-basic
+        font-weight: 650
+        color: #9d9570
+        margin-top: 12px
+      .team_describ
+        color: white
+        font-family: $font-family-basic
+        margin-top: 22px
+        font-weight: 600
+      .team_social_flex
+        display: flex
+        gap: 15px
+      svg
+        fill: #9d9570
+        width: 35px
+      img
+        width: 100%
+        object-fit: cover
+
+.choice
+  min-height: 850px
+  background-image: url(../img/_team_/choice_bg.jpg)
+  background-position: center / center
+  background-repeat: no-repeat
+  background-size: cover
+  .container
+    padding: 200px 160px 0 160px
+    .choice_title
+      font-size: 60px
+      font-family: $font-family-montserrat
+      font-weight: 700
+      color: white
+      width: 1000px
+      margin-left: 250px
+      text-align: center
+    .choice_subtitle
+      text-align: center
+      color: white
+      font-size: 20px
+      font-family: $font-family-basic
+      text-align: center   
+      margin-top: 30px   
+    .choice_wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 30px
+      margin-top: 70px
+      .choice_btn
+        width: 259px
+        height: 62px
+        background-color: white
+        border: none
+        border-radius: 10px
+        font-size: 22px
+        font-weight: 650
+        cursor: pointer
+      .choice_btn_book
+        width: 300px
+        height: 65px
+        background-color: unset
+        border: 1px solid white
+        color: black
+        font-size: 22px
+        font-weight: 650
+        transition: all .3s
+        cursor: pointer
+        &:hover
+          color: white
+
+.contact
+  min-height: 550px
+  .container
+    padding: 0 160px 0 160px
+    .contact_wrapper
+      display: grid
+      grid-template-columns: 600px 600px
+      justify-content: center
+      justify-items: stretch
+      .contact_box 
+        background-color: #292d33
+        padding: 30px 60px
+      .contact_title
+        font-size: 55px
+        font-family: $font-family-montserrat
+        font-weight: 700
+        color: white
+      form
+        margin-top: 41px
+        .contact_form
+          margin-top: 22px
+        #name
+          width: 100%
+          height: 41px
+          padding: 10px
+        #email
+          width: 100%
+          height: 41px
+          padding: 10px
+        textarea
+          resize: none
+          width: 100%
+          height: 150px
+          padding: 10px
+          font-size: 20px
+      .contact_btn
+        width: 100%
+        height: 49px
+        background-color: #9d9570
+        color: white
+        text-align: center
+        cursor: pointer
+        margin-top: 20px
+        border: none
+        font-size: 20px
+
+
+      
+    
+
+
+
+
