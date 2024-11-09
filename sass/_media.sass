@@ -516,35 +516,40 @@ $font-family-roboto: 'Roboto Condensed'
 
 @media screen and (max-width: 575px) 
   header
-    height: 75px
-    position: sticky
+    height: 50px
     .container
       padding: 0 18px 0 18px
       nav
-        margin-left: 70px
+        margin-left: 0
+        padding: 15px 0 15px 0
         a
-          font-size: 22px
+          font-size: 14px
 
   main   
     min-height: 900px
+    position: relative
+    z-index: 1
     .container
-      padding: 0 18px 0 18px
+      padding: 0 20px 0 20px
       .main_wrapper
         display: grid
-        grid-template-columns: 260px 280px
-        margin-top: 45px
+        grid-template-columns: none
+        margin-top: 0
         align-items: center
         .main_one
-          padding: 0 18px 0 18px
+          padding: 40px 18px 50px 18px
           h1
             font-size: 22px
             margin-top: 5px
+            color: white
           h2
             font-size: 18px
+            color: white
           img
             width: 100%
           a
             font-size: 15px
+            color: white
           .main_wrap_social
             display: flex
             flex-direction: column
@@ -556,39 +561,54 @@ $font-family-roboto: 'Roboto Condensed'
               .call_us
                 width: 30px
                 height: 30px
-                margin-left: 9px
+                margin-left: 5px
           .btn_title
             margin-top: 18px
+            color: white
           .main_btn
             margin-top: 35px
+            margin-left: 15px
             height: 51px
             width: 180px
+            background-color: inherit
+            color: black
+
         .main_two
           img
             width: 100%
+            height: 50%
+            position: absolute
+            object-fit: cover
+            top: 0
+            left: 0
+            z-index: -1
 
   .menu
     .container
-      padding: 0 18px 0 18px
+      padding: 0 30px 0 30px
       .menu_wrapper 
-        grid-template-columns: repeat(4, minmax(140px, auto))
-        margin-top: 50px
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: auto
+        margin-top: 40px
         .menu_box
           display: flex
           flex-direction: column
           align-items: center
+          gap: 0
+          button
+            height: 40px
           .menu_title
             font-size: 20px
           img
-            width: 80px
-            height: 80px
+            width: 60px
+            height: 60px
 
   .info
     min-height: 750px
     .container
-      padding: 100px 15px 0 15px
+      padding: 80px 20px 100px 20px
       .info_wrapper
-        grid-template-columns: 270px 250px
+        grid-template-columns: none
         gap: 10px
         .info_one
           padding: 20px
@@ -598,9 +618,9 @@ $font-family-roboto: 'Roboto Condensed'
             font-size: 18px
           button
             width: 200px
-            height: 60px
+            height: 50px
         .info_two
-          padding: 0 0 0 15px
+          padding: 35px 0 0 15px
           .info_title
             font-size: 30px
             text-align: center
@@ -608,108 +628,117 @@ $font-family-roboto: 'Roboto Condensed'
             font-size: 20px
             line-height: 24px
             font-weight: 600
+            margin-top: 20px
           li
             font-size: 20px
 
   .price
     min-height: 780px
     .container
-      padding: 60px 15px 0 15px
+      padding: 60px 25px 0 25px
       .price_title_
-        font-size: 37px
+        font-size: 35px
       .price_wrapper
-        grid-template-columns: 230px 230px
-        gap: 75px
+        grid-template-columns: 1fr
+        gap: 0
+        margin-top: 50px
         .price_title
-          font-size: 20px
+          font-size: 17px
         .price_one
-          grid-template-rows: repeat(4, 150px)
+          grid-template-rows: repeat(4, 70px)
           grid-auto-rows: 150px
         .price_two
-          grid-template-rows: repeat(4, 150px)
+          grid-template-rows: repeat(4, 70px)
           grid-auto-rows: 150px
         .price_wrap_item
           gap: 70px
           &::before
-            content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . .'
-            top: 60px
+            content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .'
+            top: 20px
 
   .booking
-    min-height: 1050px
+    min-height: 1000px
     .container
-      padding: 60px 15px 0 15px
+      padding: 80px 20px 80px 20px
       .bookin_items
         img
-          width: 85%
-          left: 53px
+          width: 100%
+          left: 0
         .booking_round
-          width: 435px
+          width: 100%
           height: 535px
-          left: 40px
+          left: 0
         .booking_round_2
-          width: 417px
+          width: 100%
           height: 390px
-          left: 60px
+          left: 0
         .booking_pic
           left: 0
         .booking_wrap
-          right: 30px
+          right: 0
           top: 450px
-          width: 400px
+          width: 100%
           min-height: 300px
           padding: 30px
           .booking_title 
-            font-size: 37px
+            font-size: 27px
           .booking_btn
-            margin-top: 40px
+            margin-top: 30px
+            height: 52px
 
   .booking_two
-    min-height: 800px
+    min-height: 700px
     .container
-      padding: 60px 15px 0 15px
+      padding: 80px 20px 50px 20px
       .booking_items
         .booking_round    
-          width: 435px
+          width: 100%
           height: 335px
           right: 0
-          left: 70px
+          left: 0
         .booking_round_2     
-          width: 317px
+          width: 100%
           height: 317px
           right: 0
-          left: 70px
+          left: 0
         img
-          width: 500px
+          width: 100%
           right: 0
-          left: 30px
+          left: 0
         .booking_wrap 
+          width: 100%
           top: 340px
-          left: 40px
-          min-height: 342px
+          left: 0
+          min-height: 280px
           padding: 25px
           .booking_title
-            font-size: 35px
+            font-size: 30px
           .booking_btn
             @include main_button
             margin-top: 35px
             width: 200px
-            height: 62px
+            height: 52px
 
   .service
     .container
-      padding: 60px 18px 55px 18px
+      padding: 60px 20px 55px 20px
+      .service_subtitle
+        padding: 0 25px
       .service_title
-        font-size: 47px
+        font-size: 35px
+        padding: 0
       .service_wrapper
         grid-template-columns: none
         img
-          width: 80%
+          width: 100%
           margin: 0 auto
         .service_wrap_flex
+          display: grid
+          grid-template-columns: repeat(2, 1fr)
           justify-content: center
           margin-top: 35px
           .service_items
-            width: 200px
+            width: 100%
             min-height: 230px
             img
               width: 85px
@@ -720,13 +749,13 @@ $font-family-roboto: 'Roboto Condensed'
   .rewies
     min-height: 820px
     .container
-      padding: 60px 18px 70px 18px 
+      padding: 60px 20px 70px 20px 
       .rewies_title
         font-size: 51px
       .rewies_subtitle
         font-size: 15px
         text-align: center
-        width: 500px
+        width: 100%
       .rewies_wrapper
         display: flex
         flex-wrap: wrap
@@ -744,7 +773,7 @@ $font-family-roboto: 'Roboto Condensed'
             font-size: 19px
 
   .contact
-    min-height: 470px
+    min-height: 370px
     .container
       padding: 0
       .contact_wrapper
@@ -758,282 +787,18 @@ $font-family-roboto: 'Roboto Condensed'
         .contact_box
           padding: 20px 20px
           .contact_title
-            font-size: 41px
-
-
-@media screen and (max-width: 544px) 
-  header
-    height: 75px
-    position: sticky
-    .container
-      padding: 0 15px 0 15px
-      nav
-        margin-left: 0
-        a
-          font-size: 9px
-
-  main   
-    min-height: 900px
-    .container
-      padding: 0 15px 0 15px
-      .main_wrapper
-        display: flex
-        flex-direction: column-reverse
-        grid-template-columns: none
-        margin-top: 0
-        .main_one
-          padding: 0 18px 0 18px
-          h1
-            font-size: 22px
-            margin-top: 5px
-          h2
-            font-size: 18px
-          img
-            width: 100%
-          a
-            font-size: 15px
-          .main_wrap_social
-            display: flex
-            flex-direction: column
-            gap: 10px
-            align-items: stretch
-            .main_wrap_items 
-              a
-                font-size: 17px
-              .call_us
-                width: 30px
-                height: 30px
-                margin-left: 7px
-          .btn_title
-            margin-top: 18px
-          .main_btn
-            margin-top: 35px
-            height: 51px
-            width: 180px
-        .main_two
-          img
-            width: 100%
-
-  .menu
-    .container
-      padding: 0 18px 50px 18px
-      .menu_wrapper 
-        grid-template-columns: none
-        grid-template-rows: none
-        grid-auto-rows: auto
-        margin-top: 50px
-        gap: 15px
-        .menu_box
-          display: flex
-          flex-wrap: wrap
-          flex-direction: column
-          align-items: center
-          justify-content: center
-          border: 1px dotted #000000b8
-          width: 200px
-          min-height: 180px
-          gap: 0
-          button
-            width: 80px
-            height: 35px
-          .menu_title
-            font-size: 15px
-          img
-            width: 60px
-            height: 60px
-
-  .info
-    min-height: 750px
-    .container
-      padding: 80px 15px 50px 15px
-      .info_wrapper
-        grid-template-columns: none
-        gap: 45px
-        .info_one
-          padding: 20px
-          .info_title
-            font-size: 28px
-          .info_sheudele
-            font-size: 18px
-          button
-            width: 200px
-            height: 60px
-        .info_two
-          padding: 0 0 0 15px
-          .info_title
             font-size: 30px
-            text-align: center
-          .info_subtitle
-            font-size: 20px
-            line-height: 24px
-            font-weight: 600
-          li
-            font-size: 20px
 
-  .price
-    min-height: 780px
-    .container
-      padding: 60px 25px 0 25px
-      .price_title_
-        font-size: 35px
-      .price_wrapper
-        grid-template-columns: none
-        gap: 0
-        margin-top: 50px
-        .price_title
-          font-size: 20px
-        .price_one
-          grid-template-rows: repeat(4, 100px)
-          grid-auto-rows: 100px
-        .price_two
-          grid-template-rows: repeat(4, 100px)
-          grid-auto-rows: 100px
-        .price_wrap_item
-          gap: 50px
-          &::before
-            content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . .'
-            top: 40px
-
-  .booking
-    min-height: 850px
-    .container
-      padding: 60px 15px 0 15px
-      .bookin_items
-        img
-          width: 85%
-          left: 10px
-        .booking_round
-          width: 220px
-          height: 220px
-          left: 10px
-        .booking_round_2
-          width: 210px
-          height: 220px
-          left: 10px
-        .booking_pic
-          left: 0
-        .booking_wrap
-          right: 0
-          top: 280px
-          width: 240px
-          min-height: 280px
-          padding: 20px
-          .booking_title 
-            font-size: 20px
-          .booking_btn
-            margin: 0 auto
-            margin-top: 30px
-            width: 200px
-
-  .booking_two
-    background-color: #000000fb
-    min-height: 700px
-    .container
-      padding: 60px 15px 0 15px
-      .booking_items
-        .booking_round    
-          width: 225px
-          height: 205px
-          right: 0
-          left: 0
-        .booking_round_2     
-          width: 217px
-          height: 117px
-          right: 0
-          left: 0
-        img
-          width: 250px
-          right: 0
-          left: 0
-        .booking_wrap 
-          width: 250px
-          top: 210px
-          left: 0
-          min-height: 342px
-          padding: 25px
-          .booking_title
-            font-size: 30px
-          .booking_btn
-            @include main_button
-            margin-top: 35px
-            width: 190px
-            height: 60px
-            margin-left: 0
-            margin-top: 25px
-
-  .service
-    .container
-      padding: 80px 18px 55px 18px
-      .service_title
-        font-size: 35px
-        padding: 0
-      .service_wrapper
-        grid-template-columns: none
-        img
-          width: 80%
-          margin: 0 auto
-        .service_wrap_flex
-          justify-content: center
-          margin-top: 35px
-          .service_items
-            width: 200px
-            min-height: 230px
-            img
-              width: 85px
-              height: 85px
-            .service_title_
-              font-size: 23px
-
-  .rewies
-    min-height: 820px
-    .container
-      padding: 60px 18px 70px 18px 
-      .rewies_title
-        font-size: 35px
-      .rewies_subtitle
-        font-size: 15px
-        text-align: center
-        width: 250px
-      .rewies_wrapper
-        display: flex
-        flex-wrap: wrap
-        gap: 25px
-        margin-top: 50px
-        .rewies_box
-          padding: 25px 20px 55px 25px
-          width: 380px
-          min-height: 350px
-          .rewies_subtitle_box
-            margin-top: 105px
-          .rewies_title_box
-            top: 52px
-            left: 20px
-            font-size: 19px
-            width: 85px
-
-  .contact
-    min-height: 470px
-    .container
-      padding: 0
-      .contact_wrapper
-        grid-template-columns: none
-        align-items: stretch
-        .contact_title
-          font-size: 51px
-        img
-          width: 100%
-          object-fit: cover
-        .contact_box
-          padding: 20px 20px
-          .contact_title
-            font-size: 41px
   footer
-    height: 60px
+    height: 30px
     .container
-      padding: 0 40px 
       .footer_title
-        padding: 20px 0
-        font-size: 17px
+        font-size: 11px
+        padding: 7px 0
+
+
+
+
 
 
 
