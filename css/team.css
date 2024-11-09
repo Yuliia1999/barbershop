@@ -279,4 +279,350 @@ main .container .main_wrapper img {
   margin-top: 20px;
   border: none;
   font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  header .container {
+    padding: 0 100px 0 100px;
+  }
+  header .container nav {
+    margin-left: 50px;
+  }
+  main {
+    min-height: 750px;
+  }
+  main .container {
+    padding: 40px 0 0 40px;
+  }
+  main .container .main_wrapper {
+    grid-template-columns: 380px 350px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .container {
+    padding: 40px 40px 100px 40px;
+  }
+  .team .container .team_title {
+    font-size: 55px;
+  }
+  .team .container .team_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 420px;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .container .team_wrapper .team_wrap_ {
+    top: 150px;
+  }
+  .team .container .team_wrapper .team_describ {
+    width: 300px;
+  }
+  .team .container .team_wrapper .team_content img {
+    width: 100%;
+    height: 100%;
+  }
+  .choice {
+    min-height: 750px;
+    background-position: center;
+  }
+  .choice .container {
+    padding: 150px 40px 0 40px;
+  }
+  .choice .container .choice_title {
+    width: auto;
+    margin: 0 auto;
+    font-size: 50px;
+  }
+  .contact {
+    min-height: 470px;
+  }
+  .contact .container {
+    padding: 0;
+  }
+  .contact .container .contact_wrapper {
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .contact .container .contact_wrapper img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact .container .contact_wrapper .contact_box {
+    padding: 30px;
+  }
+  .contact .container .contact_wrapper .contact_box .contact_title {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .container {
+    padding: 0 50px 0 50px;
+  }
+  header .container nav {
+    margin-left: 50px;
+  }
+  main {
+    min-height: 650px;
+  }
+  main .container {
+    padding: 0 0 0 40px;
+  }
+  main .container .main_wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    gap: 20px;
+  }
+  main .container .main_wrapper .main_one {
+    padding: 35px 0;
+  }
+  main .container .main_wrapper img {
+    height: 80%;
+  }
+  main .container .main_wrapper h1 {
+    font-size: 40px;
+  }
+  main .container .main_wrapper .main_btn {
+    width: 304px;
+    height: 62px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 34px;
+    width: 250px;
+    height: 58px;
+  }
+  main .container .main_wrapper .main_btn:hover {
+    background-color: #a0c6b9;
+  }
+  .team .container {
+    padding: 40px 30px 100px 30px;
+  }
+  .team .container .team_title {
+    font-size: 50px;
+  }
+  .team .container .team_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .container .team_wrapper .team_describ {
+    width: 200px;
+  }
+  .team .container .team_wrapper .team_wrap_ {
+    top: 120px;
+  }
+  .team .container .team_wrapper .team_content img {
+    width: 100%;
+    height: 100%;
+  }
+  .choice {
+    min-height: 750px;
+    background-position: center;
+  }
+  .choice .container {
+    padding: 150px 30px 40px 30px;
+  }
+  .choice .container .choice_title {
+    width: auto;
+    margin: 0 auto;
+    font-size: 40px;
+  }
+  .choice .container .choice_wrap .choice_btn {
+    width: 220px;
+    height: 58px;
+  }
+  .choice .container .choice_wrap .choice_btn_book {
+    width: 300px;
+    height: 60px;
+  }
+  .contact {
+    min-height: 470px;
+  }
+  .contact .container {
+    padding: 0;
+  }
+  .contact .container .contact_wrapper {
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .contact .container .contact_wrapper .contact_title {
+    font-size: 51px;
+  }
+  .contact .container .contact_wrapper img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact .container .contact_wrapper .contact_box {
+    padding: 20px;
+  }
+  .contact .container .contact_wrapper .contact_box .contact_title {
+    font-size: 40px;
+  }
+  .contact .container .contact_wrapper form {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 575px) {
+  header {
+    height: 40px;
+  }
+  header .container {
+    padding: 0 15px 0 15px;
+  }
+  header .container nav {
+    margin-left: 0;
+    padding: 15px 0 15px 0;
+  }
+  header .container nav a {
+    font-size: 10px;
+  }
+  main {
+    min-height: 450px;
+    position: relative;
+    z-index: 1;
+  }
+  main .container {
+    padding: 0;
+  }
+  main .container .main_wrapper {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    gap: 20px;
+  }
+  main .container .main_wrapper .main_one {
+    padding: 75px 35px;
+  }
+  main .container .main_wrapper img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  main .container .main_wrapper h2 {
+    color: white;
+  }
+  main .container .main_wrapper h1 {
+    font-size: 35px;
+    color: white;
+  }
+  main .container .main_wrapper .main_title {
+    color: white;
+  }
+  main .container .main_wrapper .main_btn {
+    width: 304px;
+    height: 62px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 34px;
+    width: 250px;
+    height: 58px;
+  }
+  main .container .main_wrapper .main_btn:hover {
+    background-color: #a0c6b9;
+  }
+  .team .container {
+    padding: 40px 15px 100px 15px;
+  }
+  .team .container .team_title {
+    font-size: 38px;
+  }
+  .team .container .team_wrapper {
+    grid-template-columns: none;
+    grid-auto-rows: 400px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .container .team_wrapper .team_describ {
+    width: 200px;
+  }
+  .team .container .team_wrapper .team_wrap_ {
+    top: 120px;
+  }
+  .team .container .team_wrapper .team_content img {
+    width: 100%;
+    height: 100%;
+  }
+  .choice {
+    min-height: 750px;
+    background-position: center;
+  }
+  .choice .container {
+    padding: 150px 25px 40px 25px;
+  }
+  .choice .container .choice_title {
+    width: auto;
+    margin: 0 auto;
+    font-size: 32px;
+  }
+  .choice .container .choice_subtitle {
+    margin-top: 25px;
+  }
+  .choice .container .choice_wrap .choice_btn {
+    width: 220px;
+    height: 58px;
+  }
+  .choice .container .choice_wrap .choice_btn_book {
+    width: 250px;
+    height: 60px;
+  }
+  .contact {
+    min-height: 470px;
+  }
+  .contact .container {
+    padding: 0;
+  }
+  .contact .container .contact_wrapper {
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .contact .container .contact_wrapper form textarea {
+    font-size: 15px;
+  }
+  .contact .container .contact_wrapper .contact_title {
+    font-size: 51px;
+  }
+  .contact .container .contact_wrapper img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact .container .contact_wrapper .contact_box {
+    padding: 20px 20px;
+  }
+  .contact .container .contact_wrapper .contact_box .contact_title {
+    font-size: 41px;
+  }
 }/*# sourceMappingURL=team.css.map */

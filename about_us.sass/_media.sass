@@ -1,0 +1,249 @@
+
+  @mixin main_btn  
+    margin-top: 60px
+    width: 304px
+    height: 62px
+    background-color: black
+    color: white
+    font-size: 22px
+    font-weight: 700
+    border: none
+    cursor: pointer
+    transition: all .3s
+    &:hover
+      opacity: 80%
+    
+@media screen and (max-width: 992px)
+  main
+    .container
+      padding: 60px 40px 0 40px
+      h1
+        font-size: 50px
+        padding: 0 12px
+      .aboutus_wrapper
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: minmax(250px, auto)
+        grid-auto-rows: 250px
+        margin-top: 10px
+        column-gap: 15px
+      .aboutus_btn
+        @include main_btn
+        width: 220px
+        height: 60px
+        margin-top: 40px
+  
+  .booking
+    .container
+      padding: 60px 40px 0 40px
+      .booking_wrapper
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 450px
+        align-items: center
+        gap: 20px
+        img
+          width: 100%
+        .booking_box
+          .booking_title
+            font-size: 48px
+      .booking_btn
+        @include main_btn
+        width: 280px
+      
+  .awards 
+    .container
+      padding: 60px 40px 0 40px
+      .awards_title
+        font-size: 44px
+      .awards_wrapper
+        grid-template-columns: 1fr 1fr 1fr
+        grid-auto-rows: 180px auto
+        gap: 15px
+
+
+@media screen and (max-width: 767px)
+  main
+    .container
+      padding: 60px 40px 0 40px
+      h1
+        font-size: 40px
+        padding: 0 12px
+      .aboutus_wrapper
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: minmax(250px, auto)
+        grid-auto-rows: 250px
+        margin-top: 10px
+        column-gap: 15px
+      .aboutus_btn
+        @include main_btn
+        width: 200px
+        height: 50px
+        margin-top: 30px
+  
+  .booking
+    .container
+      padding: 60px 40px 0 40px
+      .booking_wrapper
+        grid-template-columns: 240px 240px
+        grid-template-rows: 450px
+        align-items: center
+        gap: 20px
+        img
+          width: 100%
+        .booking_box
+          padding: 50px 15px
+          .booking_title
+            font-size: 38px
+      .booking_btn
+        @include main_btn
+        width: 200px
+        font-size: 18px
+        margin-top: 40px
+
+      
+  .awards 
+    min-height: 450px
+    .container
+      padding: 60px 40px 20px 40px
+      .awards_title
+        font-size: 35px
+      .awards_wrapper
+        grid-template-columns: 1fr 1fr 1fr
+        grid-auto-rows: 140px auto
+        align-items: center
+        row-gap: 25px
+        margin-top: 30px
+        
+  
+@media screen and (max-width: 575px)
+  main
+    .container
+      padding: 30px 25px 0 25px
+      h1
+        font-size: 35px
+        padding: 0 12px
+      .aboutus_wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-top: 10px
+        column-gap: 15px
+        .aboutus_box
+          padding: 20px 10px
+        .aboutus_describ
+          font-size: 15px
+          line-height: 20px
+      .aboutus_btn
+        @include main_btn
+        width: 200px
+        height: 50px
+        margin-top: 25px
+  
+  .booking
+    .container
+      padding: 100px 25px 25px 25px
+      .booking_wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        img
+          width: 70%
+        .booking_box
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding: 30px 15px
+          .booking_title
+            font-size: 33px
+            text-align: center
+          .booking_descr
+            text-align: center
+      .booking_btn
+        @include main_btn
+        width: 200px
+        height: 52px
+        font-size: 18px
+        margin-top: 40px
+
+      
+  .awards 
+    min-height: 450px
+    .container
+      padding: 60px 40px 20px 40px
+      .awards_title
+        font-size: 35px
+      .awards_wrapper
+        grid-template-columns: 1fr 1fr 
+        grid-auto-rows: 140px auto
+        align-items: center
+        row-gap: 25px
+        margin-top: 30px
+
+@media screen and (max-width: 350px)
+  main
+    .container
+      padding: 30px 25px 0 25px
+      h1
+        font-size: 35px
+        padding: 0 12px
+      .aboutus_wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-top: 10px
+        column-gap: 15px
+        .aboutus_box
+          padding: 20px 10px
+        .aboutus_describ
+          font-size: 15px
+          line-height: 20px
+      .aboutus_btn
+        @include main_btn
+        width: 200px
+        height: 50px
+        margin-top: 25px
+  
+  .booking
+    .container
+      padding: 100px 25px 25px 25px
+      .booking_wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        img
+          width: 70%
+        .booking_box
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding: 30px 15px
+          .booking_title
+            font-size: 33px
+            text-align: center
+          .booking_descr
+            text-align: center
+      .booking_btn
+        @include main_btn
+        width: 200px
+        height: 52px
+        font-size: 18px
+        margin-top: 40px
+
+      
+  .awards 
+    min-height: 450px
+    .container
+      padding: 60px 40px 20px 40px
+      .awards_title
+        font-size: 35px
+      .awards_wrapper
+        grid-template-columns: 1fr 1fr 
+        grid-auto-rows: 140px auto
+        align-items: center
+        row-gap: 25px
+        margin-top: 30px
+
+
+
+
+
+        

@@ -696,24 +696,27 @@ footer .container .footer_title {
     position: sticky;
   }
   header .container {
-    padding: 0 140px 0 140px;
+    padding: 0 100px 0 100px;
   }
   header .container nav {
     margin-left: 0;
+  }
+  header .container nav a {
+    font-size: 23px;
   }
   main {
     min-height: 1000px;
   }
   main .container {
-    padding: 0 80px 0 80px;
+    padding: 0 40px 0 40px;
   }
   main .container .main_wrapper {
     display: grid;
-    grid-template-columns: 400px 500px;
+    grid-template-columns: 300px 385px;
     margin-top: 60px;
   }
   main .container .main_wrapper .main_one h1 {
-    font-size: 47px;
+    font-size: 43px;
   }
   main .container .main_wrapper .main_one img {
     width: 100%;
@@ -740,21 +743,21 @@ footer .container .footer_title {
     width: 100%;
   }
   .menu .container {
-    padding: 0 100px 0 100px;
+    padding: 0 40px 0 40px;
   }
   .menu .container .menu_wrapper {
-    grid-template-columns: repeat(4, minmax(210px, auto));
+    grid-template-columns: repeat(4, minmax(180px, auto));
     margin-top: 70px;
   }
   .info {
     min-height: 750px;
   }
   .info .container {
-    padding: 100px 100px 0 100px;
+    padding: 100px 40px 0 40px;
   }
   .info .container .info_wrapper {
-    grid-template-columns: 400px 320px;
-    gap: 40px;
+    grid-template-columns: 350px 300px;
+    gap: 25px;
   }
   .info .container .info_wrapper .info_one {
     padding: 20px;
@@ -781,13 +784,13 @@ footer .container .footer_title {
     font-size: 20px;
   }
   .price .container {
-    padding: 60px 100px 0 100px;
+    padding: 60px 40px 0 40px;
   }
   .price .container .price_title_ {
     font-size: 45px;
   }
   .price .container .price_wrapper {
-    grid-template-columns: 330px 330px;
+    grid-template-columns: 300px 300px;
     gap: 85px;
   }
   .price .container .price_wrapper .price_one {
@@ -802,27 +805,32 @@ footer .container .footer_title {
     gap: 70px;
   }
   .price .container .price_wrapper .price_wrap_item::before {
-    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     top: 60px;
   }
   .booking .container {
-    padding: 60px 100px 0 100px;
+    padding: 60px 40px 0 40px;
+  }
+  .booking .container img {
+    left: 50px;
   }
   .booking .container .bookin_items .booking_round {
     width: 635px;
-    height: 735px;
+    height: 635px;
+    left: 20px;
   }
   .booking .container .bookin_items .booking_round_2 {
     width: 517px;
     height: 517px;
+    left: 50px;
   }
   .booking .container .bookin_items .booking_pic {
     left: 0;
   }
   .booking .container .bookin_items .booking_wrap {
-    right: -30px;
-    top: 510px;
-    width: 540px;
+    right: 50px;
+    top: 530px;
+    width: 520px;
     min-height: 400px;
     padding: 30px;
   }
@@ -833,28 +841,29 @@ footer .container .footer_title {
     margin-top: 60px;
   }
   .booking_two {
-    min-height: 970px;
+    min-height: 950px;
   }
   .booking_two .container {
-    padding: 60px 100px 0 100px;
+    padding: 60px 40px 0 40px;
   }
   .booking_two .container .booking_items .booking_round {
-    width: 635px;
-    height: 635px;
-    right: 180px;
+    width: 535px;
+    height: 535px;
+    right: 140px;
   }
   .booking_two .container .booking_items .booking_round_2 {
-    width: 517px;
-    height: 517px;
-    right: 250px;
+    width: 417px;
+    height: 417px;
+    right: 120px;
   }
   .booking_two .container .booking_items img {
-    width: 700px;
-    right: 120px;
+    width: 650px;
+    right: 0;
+    left: 4px;
   }
   .booking_two .container .booking_items .booking_wrap {
     top: 450px;
-    left: 250px;
+    left: 140px;
     min-height: 352px;
     padding: 30px;
   }
@@ -881,22 +890,23 @@ footer .container .footer_title {
     background-color: black;
   }
   .service .container {
-    padding: 60px 100px 0 100px;
+    padding: 60px 40px 0 40px;
   }
   .service .container .service_title {
     font-size: 47px;
   }
   .service .container .service_wrapper {
-    grid-template-columns: 370px 450px;
-    -webkit-column-gap: 45px;
-       -moz-column-gap: 45px;
-            column-gap: 45px;
+    grid-template-columns: 287px 370px;
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
   }
   .service .container .service_wrapper img {
     width: 100%;
   }
   .service .container .service_wrapper .service_wrap_flex .service_items {
-    width: 200px;
+    width: 170px;
+    min-height: 230px;
   }
   .service .container .service_wrapper .service_wrap_flex .service_items img {
     width: 90px;
@@ -909,7 +919,7 @@ footer .container .footer_title {
     min-height: 820px;
   }
   .rewies .container {
-    padding: 60px 40px 0 40px;
+    padding: 60px 40px 80px 40px;
   }
   .rewies .container .rewies_title {
     font-size: 48px;
@@ -918,8 +928,8 @@ footer .container .footer_title {
     font-size: 15px;
   }
   .rewies .container .rewies_wrapper {
-    grid-template-columns: 275px 275px 275px;
-    grid-template-rows: minmax(345px, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(335px, auto);
     grid-auto-rows: 335px auto;
     gap: 25px;
     margin-top: 50px;
@@ -929,17 +939,22 @@ footer .container .footer_title {
   }
   .rewies .container .rewies_wrapper .rewies_box .rewies_subtitle_box {
     margin-top: 105px;
+    font-size: 17px;
   }
   .rewies .container .rewies_wrapper .rewies_box .rewies_title_box {
     top: 52px;
     left: 20px;
     font-size: 19px;
+    width: 85px;
   }
   .contact {
     min-height: 470px;
   }
+  .contact .container {
+    padding: 0;
+  }
   .contact .container .contact_wrapper {
-    grid-template-columns: 450px 540px;
+    grid-template-columns: 1fr 1fr;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -949,14 +964,24 @@ footer .container .footer_title {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .contact .container .contact_wrapper img .contact_box {
-    padding: 20px 50px;
+  .contact .container .contact_wrapper .contact_box {
+    padding: 30px;
   }
-  .contact .container .contact_wrapper img .contact_box .contact_title {
+  .contact .container .contact_wrapper .contact_box .contact_title {
     font-size: 52px;
   }
+  footer {
+    height: 90px;
+  }
+  footer .container {
+    padding: 0 40px;
+  }
+  footer .container .footer_title {
+    padding: 30px 0;
+    font-size: 19px;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header {
     height: 75px;
     position: sticky;
@@ -965,7 +990,7 @@ footer .container .footer_title {
     padding: 0 40px 0 40px;
   }
   header .container nav {
-    margin-left: 150px;
+    margin-left: 0;
   }
   header .container nav a {
     font-size: 22px;
@@ -978,11 +1003,14 @@ footer .container .footer_title {
   }
   main .container .main_wrapper {
     display: grid;
-    grid-template-columns: 300px 380px;
-    margin-top: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: 230px 270px;
+    margin-top: 50px;
   }
   main .container .main_wrapper .main_one h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 10px;
   }
   main .container .main_wrapper .main_one img {
@@ -997,14 +1025,22 @@ footer .container .footer_title {
             align-items: stretch;
     gap: 7px;
   }
+  main .container .main_wrapper .main_one .main_wrap_social .main_wrap_items {
+    gap: 7px;
+  }
   main .container .main_wrapper .main_one .main_wrap_social .main_wrap_items a {
     font-size: 17px;
+  }
+  main .container .main_wrapper .main_one .main_wrap_social .main_wrap_items .call_us {
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
   }
   main .container .main_wrapper .main_one .btn_title {
     margin-top: 18px;
   }
   main .container .main_wrapper .main_one .main_btn {
-    margin-top: 40px;
+    margin-top: 35px;
     height: 55px;
     width: 200px;
   }
@@ -1012,11 +1048,11 @@ footer .container .footer_title {
     width: 100%;
   }
   .menu .container {
-    padding: 0 40px 0 40px;
+    padding: 0 20px 0 20px;
   }
   .menu .container .menu_wrapper {
-    grid-template-columns: repeat(4, minmax(180px, auto));
-    margin-top: 70px;
+    grid-template-columns: repeat(4, minmax(138px, auto));
+    margin-top: 50px;
   }
   .menu .container .menu_wrapper .menu_box {
     display: -webkit-box;
@@ -1029,10 +1065,14 @@ footer .container .footer_title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 10px;
+  }
+  .menu .container .menu_wrapper .menu_box .menu_title {
+    font-size: 20px;
   }
   .menu .container .menu_wrapper .menu_box img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
   .info {
     min-height: 750px;
@@ -1041,8 +1081,8 @@ footer .container .footer_title {
     padding: 100px 40px 0 40px;
   }
   .info .container .info_wrapper {
-    grid-template-columns: 330px 320px;
-    gap: 40px;
+    grid-template-columns: 250px 240px;
+    gap: 10px;
   }
   .info .container .info_wrapper .info_one {
     padding: 20px;
@@ -1051,17 +1091,21 @@ footer .container .footer_title {
     font-size: 28px;
   }
   .info .container .info_wrapper .info_one .info_sheudele {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .info .container .info_wrapper .info_one button {
+    width: 195px;
+    height: 57px;
   }
   .info .container .info_wrapper .info_two {
-    padding: 20px;
+    padding: 20px 0 0 20px;
   }
   .info .container .info_wrapper .info_two .info_title {
-    font-size: 33px;
+    font-size: 32px;
     text-align: center;
   }
   .info .container .info_wrapper .info_two .info_subtitle {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 24px;
     font-weight: 600;
   }
@@ -1072,11 +1116,14 @@ footer .container .footer_title {
     padding: 60px 40px 0 40px;
   }
   .price .container .price_title_ {
-    font-size: 40px;
+    font-size: 37px;
   }
   .price .container .price_wrapper {
-    grid-template-columns: 280px 280px;
-    gap: 85px;
+    grid-template-columns: 220px 220px;
+    gap: 60px;
+  }
+  .price .container .price_wrapper .price_title {
+    font-size: 19px;
   }
   .price .container .price_wrapper .price_one {
     grid-template-rows: repeat(4, 150px);
@@ -1090,72 +1137,79 @@ footer .container .footer_title {
     gap: 70px;
   }
   .price .container .price_wrapper .price_wrap_item::before {
-    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     top: 60px;
+  }
+  .booking {
+    min-height: 1050px;
   }
   .booking .container {
     padding: 60px 40px 0 40px;
   }
   .booking .container .bookin_items img {
-    left: 80px;
+    left: 0;
+    width: 90%;
+    top: 30px;
   }
   .booking .container .bookin_items .booking_round {
-    width: 535px;
-    height: 635px;
-    left: 40px;
+    width: 435px;
+    height: 535px;
+    top: -15px;
+    left: 0;
   }
   .booking .container .bookin_items .booking_round_2 {
     width: 417px;
-    height: 417px;
+    height: 317px;
     left: 60px;
   }
   .booking .container .bookin_items .booking_pic {
     left: 0;
   }
   .booking .container .bookin_items .booking_wrap {
-    right: 30px;
-    top: 550px;
-    width: 540px;
-    min-height: 350px;
+    right: 0;
+    top: 470px;
+    width: 400px;
+    min-height: 320px;
     padding: 30px;
   }
   .booking .container .bookin_items .booking_wrap .booking_title {
-    font-size: 40px;
+    font-size: 38px;
   }
   .booking .container .bookin_items .booking_wrap .booking_btn {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .booking_two {
-    min-height: 840px;
+    min-height: 740px;
   }
   .booking_two .container {
     padding: 60px 40px 0 40px;
   }
   .booking_two .container .booking_items .booking_round {
-    width: 535px;
-    height: 535px;
+    width: 435px;
+    height: 435px;
     right: 0;
-    left: 120px;
+    left: 25px;
   }
   .booking_two .container .booking_items .booking_round_2 {
     width: 417px;
     height: 417px;
     right: 0;
-    left: 120px;
+    left: 0;
   }
   .booking_two .container .booking_items img {
-    width: 600px;
+    width: 490px;
     right: 0;
-    left: 80px;
+    left: 0;
   }
   .booking_two .container .booking_items .booking_wrap {
-    top: 380px;
-    left: 140px;
+    width: 400px;
+    top: 310px;
+    left: 90px;
     min-height: 352px;
     padding: 28px;
   }
   .booking_two .container .booking_items .booking_wrap .booking_title {
-    font-size: 38px;
+    font-size: 33px;
   }
   .booking_two .container .booking_items .booking_wrap .booking_btn {
     width: 207px;
@@ -1171,6 +1225,8 @@ footer .container .footer_title {
     transition: all 0.2s;
     margin-left: 10px;
     margin-top: 35px;
+    width: 190px;
+    height: 60px;
   }
   .booking_two .container .booking_items .booking_wrap .booking_btn:hover {
     color: white;
@@ -1183,13 +1239,20 @@ footer .container .footer_title {
     font-size: 47px;
   }
   .service .container .service_wrapper {
-    grid-template-columns: 270px 430px;
+    grid-template-columns: none;
     -webkit-column-gap: 25px;
        -moz-column-gap: 25px;
             column-gap: 25px;
   }
   .service .container .service_wrapper img {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .service .container .service_wrapper .service_wrap_flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 35px;
   }
   .service .container .service_wrapper .service_wrap_flex .service_items {
     width: 200px;
@@ -1206,13 +1269,14 @@ footer .container .footer_title {
     min-height: 820px;
   }
   .rewies .container {
-    padding: 60px 40px 70px 40px;
+    padding: 130px 40px 90px 40px;
   }
   .rewies .container .rewies_title {
     font-size: 51px;
   }
   .rewies .container .rewies_subtitle {
     font-size: 15px;
+    width: 510px;
   }
   .rewies .container .rewies_wrapper {
     display: -webkit-box;
@@ -1225,7 +1289,7 @@ footer .container .footer_title {
   }
   .rewies .container .rewies_wrapper .rewies_box {
     padding: 25px 20px 55px 25px;
-    width: 300px;
+    width: 350px;
     min-height: 350px;
   }
   .rewies .container .rewies_wrapper .rewies_box .rewies_subtitle_box {
@@ -1235,6 +1299,7 @@ footer .container .footer_title {
     top: 52px;
     left: 20px;
     font-size: 19px;
+    width: auto;
   }
   .contact {
     min-height: 470px;
@@ -1243,7 +1308,7 @@ footer .container .footer_title {
     padding: 0;
   }
   .contact .container .contact_wrapper {
-    grid-template-columns: 370px 400px;
+    grid-template-columns: 1fr 1fr;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1256,11 +1321,14 @@ footer .container .footer_title {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .contact .container .contact_wrapper img .contact_box {
-    padding: 20px 50px;
+  .contact .container .contact_wrapper .contact_box {
+    padding: 20px;
   }
-  .contact .container .contact_wrapper img .contact_box .contact_title {
-    font-size: 52px;
+  .contact .container .contact_wrapper .contact_box .contact_title {
+    font-size: 40px;
+  }
+  .contact .container .contact_wrapper form {
+    margin-top: 35px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1494,8 +1562,8 @@ footer .container .footer_title {
     left: 30px;
   }
   .booking_two .container .booking_items .booking_wrap {
-    top: 380px;
-    left: 20px;
+    top: 340px;
+    left: 40px;
     min-height: 342px;
     padding: 25px;
   }
@@ -1596,7 +1664,7 @@ footer .container .footer_title {
     padding: 0;
   }
   .contact .container .contact_wrapper {
-    grid-template-columns: 255px 320px;
+    grid-template-columns: 1fr 1fr;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1613,36 +1681,39 @@ footer .container .footer_title {
     padding: 20px 20px;
   }
   .contact .container .contact_wrapper .contact_box .contact_title {
-    font-size: 47px;
+    font-size: 41px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 544px) {
   header {
-    height: 70px;
+    height: 75px;
     position: sticky;
   }
   header .container {
-    padding: 0 10px 0 10px;
+    padding: 0 15px 0 15px;
   }
   header .container nav {
     margin-left: 0;
   }
   header .container nav a {
-    font-size: 13px;
+    font-size: 9px;
   }
   main {
     min-height: 900px;
   }
   main .container {
-    padding: 0 18px 0 18px;
+    padding: 0 15px 0 15px;
   }
   main .container .main_wrapper {
-    display: grid;
-    grid-template-columns: 260px 280px;
-    margin-top: 45px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    grid-template-columns: none;
+    margin-top: 0;
   }
   main .container .main_wrapper .main_one {
     padding: 0 18px 0 18px;
@@ -1679,7 +1750,7 @@ footer .container .footer_title {
   main .container .main_wrapper .main_one .main_wrap_social .main_wrap_items .call_us {
     width: 30px;
     height: 30px;
-    margin-left: 9px;
+    margin-left: 7px;
   }
   main .container .main_wrapper .main_one .btn_title {
     margin-top: 18px;
@@ -1693,16 +1764,21 @@ footer .container .footer_title {
     width: 100%;
   }
   .menu .container {
-    padding: 0 18px 0 18px;
+    padding: 0 18px 50px 18px;
   }
   .menu .container .menu_wrapper {
-    grid-template-columns: repeat(4, minmax(140px, auto));
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-auto-rows: auto;
     margin-top: 50px;
+    gap: 15px;
   }
   .menu .container .menu_wrapper .menu_box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1710,23 +1786,34 @@ footer .container .footer_title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px dotted rgba(0, 0, 0, 0.7215686275);
+    width: 200px;
+    min-height: 180px;
+    gap: 0;
+  }
+  .menu .container .menu_wrapper .menu_box button {
+    width: 80px;
+    height: 35px;
   }
   .menu .container .menu_wrapper .menu_box .menu_title {
-    font-size: 20px;
+    font-size: 15px;
   }
   .menu .container .menu_wrapper .menu_box img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .info {
     min-height: 750px;
   }
   .info .container {
-    padding: 100px 15px 0 15px;
+    padding: 80px 15px 50px 15px;
   }
   .info .container .info_wrapper {
-    grid-template-columns: 270px 250px;
-    gap: 10px;
+    grid-template-columns: none;
+    gap: 45px;
   }
   .info .container .info_wrapper .info_one {
     padding: 20px;
@@ -1760,100 +1847,105 @@ footer .container .footer_title {
     min-height: 780px;
   }
   .price .container {
-    padding: 60px 15px 0 15px;
+    padding: 60px 25px 0 25px;
   }
   .price .container .price_title_ {
-    font-size: 37px;
+    font-size: 35px;
   }
   .price .container .price_wrapper {
-    grid-template-columns: 230px 230px;
-    gap: 75px;
+    grid-template-columns: none;
+    gap: 0;
+    margin-top: 50px;
   }
   .price .container .price_wrapper .price_title {
     font-size: 20px;
   }
   .price .container .price_wrapper .price_one {
-    grid-template-rows: repeat(4, 150px);
-    grid-auto-rows: 150px;
+    grid-template-rows: repeat(4, 100px);
+    grid-auto-rows: 100px;
   }
   .price .container .price_wrapper .price_two {
-    grid-template-rows: repeat(4, 150px);
-    grid-auto-rows: 150px;
+    grid-template-rows: repeat(4, 100px);
+    grid-auto-rows: 100px;
   }
   .price .container .price_wrapper .price_wrap_item {
-    gap: 70px;
+    gap: 50px;
   }
   .price .container .price_wrapper .price_wrap_item::before {
     content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
-    top: 60px;
+    top: 40px;
   }
   .booking {
-    min-height: 1050px;
+    min-height: 850px;
   }
   .booking .container {
     padding: 60px 15px 0 15px;
   }
   .booking .container .bookin_items img {
     width: 85%;
-    left: 53px;
+    left: 10px;
   }
   .booking .container .bookin_items .booking_round {
-    width: 435px;
-    height: 535px;
-    left: 40px;
+    width: 220px;
+    height: 220px;
+    left: 10px;
   }
   .booking .container .bookin_items .booking_round_2 {
-    width: 417px;
-    height: 390px;
-    left: 60px;
+    width: 210px;
+    height: 220px;
+    left: 10px;
   }
   .booking .container .bookin_items .booking_pic {
     left: 0;
   }
   .booking .container .bookin_items .booking_wrap {
-    right: 30px;
-    top: 450px;
-    width: 400px;
-    min-height: 300px;
-    padding: 30px;
+    right: 0;
+    top: 280px;
+    width: 240px;
+    min-height: 280px;
+    padding: 20px;
   }
   .booking .container .bookin_items .booking_wrap .booking_title {
-    font-size: 37px;
+    font-size: 20px;
   }
   .booking .container .bookin_items .booking_wrap .booking_btn {
-    margin-top: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
   }
   .booking_two {
-    min-height: 800px;
+    background-color: rgba(0, 0, 0, 0.9843137255);
+    min-height: 700px;
   }
   .booking_two .container {
     padding: 60px 15px 0 15px;
   }
   .booking_two .container .booking_items .booking_round {
-    width: 435px;
-    height: 335px;
+    width: 225px;
+    height: 205px;
     right: 0;
-    left: 70px;
+    left: 0;
   }
   .booking_two .container .booking_items .booking_round_2 {
-    width: 317px;
-    height: 317px;
+    width: 217px;
+    height: 117px;
     right: 0;
-    left: 70px;
+    left: 0;
   }
   .booking_two .container .booking_items img {
-    width: 500px;
+    width: 250px;
     right: 0;
-    left: 30px;
+    left: 0;
   }
   .booking_two .container .booking_items .booking_wrap {
-    top: 380px;
-    left: 20px;
+    width: 250px;
+    top: 210px;
+    left: 0;
     min-height: 342px;
     padding: 25px;
   }
   .booking_two .container .booking_items .booking_wrap .booking_title {
-    font-size: 35px;
+    font-size: 30px;
   }
   .booking_two .container .booking_items .booking_wrap .booking_btn {
     width: 207px;
@@ -1869,18 +1961,21 @@ footer .container .footer_title {
     transition: all 0.2s;
     margin-left: 10px;
     margin-top: 35px;
-    width: 200px;
-    height: 62px;
+    width: 190px;
+    height: 60px;
+    margin-left: 0;
+    margin-top: 25px;
   }
   .booking_two .container .booking_items .booking_wrap .booking_btn:hover {
     color: white;
     background-color: black;
   }
   .service .container {
-    padding: 60px 18px 55px 18px;
+    padding: 80px 18px 55px 18px;
   }
   .service .container .service_title {
-    font-size: 47px;
+    font-size: 35px;
+    padding: 0;
   }
   .service .container .service_wrapper {
     grid-template-columns: none;
@@ -1913,12 +2008,12 @@ footer .container .footer_title {
     padding: 60px 18px 70px 18px;
   }
   .rewies .container .rewies_title {
-    font-size: 51px;
+    font-size: 35px;
   }
   .rewies .container .rewies_subtitle {
     font-size: 15px;
     text-align: center;
-    width: 500px;
+    width: 250px;
   }
   .rewies .container .rewies_wrapper {
     display: -webkit-box;
@@ -1941,6 +2036,7 @@ footer .container .footer_title {
     top: 52px;
     left: 20px;
     font-size: 19px;
+    width: 85px;
   }
   .contact {
     min-height: 470px;
@@ -1949,7 +2045,7 @@ footer .container .footer_title {
     padding: 0;
   }
   .contact .container .contact_wrapper {
-    grid-template-columns: 255px 320px;
+    grid-template-columns: none;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1966,6 +2062,16 @@ footer .container .footer_title {
     padding: 20px 20px;
   }
   .contact .container .contact_wrapper .contact_box .contact_title {
-    font-size: 47px;
+    font-size: 41px;
+  }
+  footer {
+    height: 60px;
+  }
+  footer .container {
+    padding: 0 40px;
+  }
+  footer .container .footer_title {
+    padding: 20px 0;
+    font-size: 17px;
   }
 }/*# sourceMappingURL=style.css.map */
