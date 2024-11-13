@@ -46,6 +46,9 @@ main .container .main_wrapper {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 60px;
 }
 main .container .main_wrapper img {
@@ -716,6 +719,9 @@ footer .container .footer_title {
   main .container .main_wrapper {
     display: grid;
     grid-template-columns: 300px 385px;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
     margin-top: 60px;
   }
   main .container .main_wrapper .main_one h1 {
@@ -1014,6 +1020,9 @@ footer .container .footer_title {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 50px;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
   }
   main .container .main_wrapper .main_one h1 {
     font-size: 28px;
@@ -1372,9 +1381,9 @@ footer .container .footer_title {
     display: grid;
     grid-template-columns: none;
     margin-top: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
     min-height: 700px;
   }
   main .container .main_wrapper .main_one {
