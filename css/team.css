@@ -158,7 +158,7 @@ main .container .main_wrapper img {
 
 .choice {
   min-height: 850px;
-  background-image: url(../img/_team_/choice_bg.jpg);
+  background-image: url("../img_team/choice_bg.jpg");
   background-position: center/center;
   background-repeat: no-repeat;
   background-size: cover;
